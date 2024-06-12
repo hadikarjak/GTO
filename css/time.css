@@ -1,0 +1,421 @@
+body {
+  color: #768390;
+  background: #1f1a17;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #ff6b6b;
+}
+a:hover {
+  color: #ff9a9a;
+  text-decoration: none;
+}
+.color-main {
+  color: #ffbe34;
+}
+/* Navbar */
+/* Start Navbar */
+.navbar {
+  margin-top: 15px;
+  background-color: #1f1a17;
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+  font-size: 17px;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  color: #ffbe34;
+}
+.navbar .search {
+  border-left: 1px solid #ffbe34;
+}
+.navbar .search svg {
+  color: #ffbe34;
+}
+.navbar .btn-track {
+  display: block;
+  border: 2px solid transparent;
+  width: fit-content;
+  padding: 10px 30px;
+  border-radius: 6px;
+  transition: 0.3 all ease-in-out;
+  color: #ffbe34;
+  border-color: #ffbe34;
+  background: linear-gradient(to right, #ffbe34 50%, #1f1a17 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: 0.3s;
+  outline: none;
+}
+.navbar .btn-track:hover {
+  background-position: left bottom;
+  color: white;
+}
+
+.navbar .navbar-toggler {
+  color: white;
+  font-size: 25px;
+  border-color: none;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: none;
+}
+/* End Navbar */
+
+/* Start Input */
+.input-group {
+  position: relative;
+  margin: 1rem 0;
+  height: 55px;
+}
+
+.input-group .input-elem {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  background-color: #1f1a17;
+  border: 1px solid #ffbe34;
+  border-radius: 5px;
+  padding: 0 1.5rem;
+  font-size: 0.875rem;
+  outline: none;
+  color: #ffbe34;
+}
+
+.input-group label {
+  position: absolute;
+  top: 0;
+  font-size: 0.8rem;
+  transform: translateY(-50%);
+  left: 1rem;
+  padding: 0 0.5rem;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  background-color: #1f1a17;
+  pointer-events: none;
+  color: #e4eaec;
+}
+
+.input-group .input-elem:focus {
+  border: 2px solid #ffbe34;
+  color: #ffbe34;
+}
+
+.input-group .input-elem:not(:placeholder-shown) + label {
+  top: 0;
+}
+
+::placeholder {
+  color: #ffbe34;
+}
+
+.input-group .input-elem:focus + label {
+  top: 0;
+  background-color: #1f1a17;
+  color: #ffbe34;
+}
+
+.btn-register {
+  background-color: #ffbe34;
+  width: 100%;
+  height: 55px;
+  color: #fff;
+  font-size: 0.875rem;
+  margin-top: 8px;
+}
+
+.btn-register:hover {
+  background-color: #ffc851;
+  color: #1f1a17;
+}
+/* End Input */
+
+/* Start Feature */
+.feature {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+  background-color: #ffbe34;
+}
+/* End Feature */
+
+.example-header {
+  background: #3d4351;
+  color: #fff;
+  font-weight: 300;
+  padding: 3em 1em;
+  text-align: center;
+}
+.example-header h1 {
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.example-header p {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.container-fluid .row {
+  padding: 0 0 4em 0;
+}
+.container-fluid .row:nth-child(even) {
+  background: #f1f4f5;
+}
+
+.example-title {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 3em 0;
+  border-bottom: 1px solid #e4eaec;
+}
+.example-title p {
+  margin: 0 auto;
+  font-size: 16px;
+  max-width: 400px;
+}
+
+/*==================================
+    TIMELINE
+==================================*/
+/*-- GENERAL STYLES
+------------------------------*/
+.timeline {
+  line-height: 1.4em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/*----- TIMELINE ITEM -----*/
+.timeline-item {
+  padding-left: 40px;
+  position: relative;
+}
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+.done {
+  color: #ffbe34;
+}
+.done .timeline-marker:before {
+  background: #ffbe34;
+  border: 3px solid #ffbe34;
+}
+.done .timeline-marker:after {
+  background: #ffbe34;
+}
+/*----- TIMELINE INFO -----*/
+.timeline-info {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin: 0 0 0.5em 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/*----- TIMELINE MARKER -----*/
+.timeline-marker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15px;
+}
+.timeline-marker:before {
+  background: none;
+  border: 3px solid #ccd5db;
+  border-radius: 100%;
+  content: "";
+  display: block;
+  height: 15px;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 15px;
+  transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+.timeline-marker:after {
+  content: "";
+  width: 3px;
+  background: #ccd5db;
+  display: block;
+  position: absolute;
+  top: 24px;
+  bottom: 0;
+  left: 6px;
+}
+.timeline-item:last-child .timeline-marker:after {
+  content: none;
+}
+
+/*----- TIMELINE CONTENT -----*/
+.timeline-content {
+  padding-bottom: 40px;
+}
+.timeline-content p:last-child {
+  margin-bottom: 0;
+}
+
+/*----- TIMELINE PERIOD -----*/
+.period {
+  padding: 0;
+}
+.period .timeline-info {
+  display: none;
+}
+.period .timeline-marker:before {
+  background: transparent;
+  content: "";
+  width: 15px;
+  height: auto;
+  border: none;
+  border-radius: 0;
+  top: 0;
+  bottom: 30px;
+  position: absolute;
+  border-bottom: 3px solid #ffbe34;
+}
+.period .timeline-marker:after {
+  content: "";
+  height: 32px;
+  top: auto;
+  background-color: #ffbe34;
+}
+.period .timeline-content {
+  padding: 40px 0 70px;
+}
+.period .timeline-title {
+  margin: 0;
+  text-transform: uppercase;
+}
+.period .timeline-title-secondry {
+  margin: 0;
+  text-transform: uppercase;
+}
+/*----------------------------------------------
+    MOD: TIMELINE SPLIT
+----------------------------------------------*/
+@media (min-width: 768px) {
+  .timeline-split .timeline,
+  .timeline-centered .timeline {
+    display: table;
+  }
+  .timeline-split .timeline-item,
+  .timeline-centered .timeline-item {
+    display: table-row;
+    padding: 0;
+  }
+  .timeline-split .timeline-info,
+  .timeline-centered .timeline-info,
+  .timeline-split .timeline-marker,
+  .timeline-centered .timeline-marker,
+  .timeline-split .timeline-content,
+  .timeline-centered .timeline-content,
+  .timeline-split .period .timeline-info {
+    display: table-cell;
+    vertical-align: top;
+  }
+  .timeline-split .timeline-marker,
+  .timeline-centered .timeline-marker {
+    position: relative;
+  }
+  .timeline-split .timeline-content,
+  .timeline-centered .timeline-content {
+    padding-left: 30px;
+  }
+  .timeline-split .timeline-info,
+  .timeline-centered .timeline-info {
+    padding-right: 30px;
+  }
+  .timeline-split .period .timeline-title,
+  .timeline-centered .period .timeline-title {
+    position: relative;
+    left: -45px;
+  }
+}
+
+/*----------------------------------------------
+    MOD: TIMELINE CENTERED
+----------------------------------------------*/
+@media (min-width: 992px) {
+  .timeline-centered,
+  .timeline-centered .timeline-item,
+  .timeline-centered .timeline-info,
+  .timeline-centered .timeline-marker,
+  .timeline-centered .timeline-content {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .timeline-centered .timeline-item {
+    padding-bottom: 40px;
+    overflow: hidden;
+  }
+  .timeline-centered .timeline-marker {
+    position: absolute;
+    left: 50%;
+    margin-left: -7.5px;
+  }
+  .timeline-centered .timeline-info,
+  .timeline-centered .timeline-content {
+    width: 50%;
+  }
+  .timeline-centered > .timeline-item .timeline-info {
+    float: left;
+    text-align: right;
+    padding-right: 30px;
+  }
+  .timeline-centered > .timeline-item .timeline-content {
+    float: right;
+    text-align: left;
+    padding-left: 30px;
+  }
+
+  .timeline-centered > .timeline-item.period .timeline-content {
+    float: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .timeline-centered .timeline-item.period {
+    padding: 50px 0 90px;
+  }
+  .timeline-centered .period .timeline-marker:after {
+    height: 30px;
+    bottom: 0;
+    top: auto;
+  }
+  .timeline-centered .period .timeline-title {
+    left: auto;
+  }
+}
+
+/*----------------------------------------------
+    MOD: MARKER OUTLINE
+----------------------------------------------*/
+.marker-outline .timeline-marker:before {
+  background: transparent;
+  border-color: #ff6b6b;
+}
+.marker-outline .timeline-item:hover .timeline-marker:before {
+  background: #ff6b6b;
+} /*# sourceMappingURL=time.css.map */
