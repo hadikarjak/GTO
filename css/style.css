@@ -204,7 +204,7 @@ a:hover {
 .landing{
   min-height: 100vh;
   background-color: #1f2021;
-  background-image: url("/slider/1.jpg");
+  background-image: url("../slider/1.jpg");
   background-size: cover;
   position: relative;
 }
@@ -266,7 +266,7 @@ color: #f4f4f4;
 .land2{
   min-height: 100vh;
   background-color: #1f2021;
-  background-image: url("/slider/2.jpg");
+  background-image: url("../slider/2.jpg");
   background-size: cover;
   position: relative;
 }
